@@ -25,7 +25,7 @@ namespace InventoryStuff
     {
         [Header("Type specific")]
         public float hpHealed;
-        public StatusEffect[] effectsApplied;
+        public StatusEffect[] effectsApplied = new StatusEffect[0];
 
         public override void UseItem(Entity source, Vector3 inputDir)
         {
